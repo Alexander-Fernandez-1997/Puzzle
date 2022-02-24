@@ -1,0 +1,59 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #371a40;
+}
+h1 {
+  background: #fefedf;
+}
+
+table {
+  width: 428px;
+  border: 10px solid black;
+  background: black;
+}
+
+tr {
+  flex-wrap: wrap;
+  display: flex;
+}
+
+td {
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  margin: 1px;
+  background: #fefedf;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+.empty {
+  background: black;
+}
+#show-hint {
+  background: #fefedf;
+  color: black;
+}
+
+button {
+  margin-top: 40px;
+}
+
+.hint {
+  margin-top: 16px;
+  opacity: 0;
+  transition: 0.3s opacity ease;
+}
+
+.hint.active {
+  opacity: 1;
+  color: black;
+  font-size: 2.5rem;
+  background: #fefedf;
+}
